@@ -79,8 +79,10 @@ figure {
 
 img {
     border-radius: 8px 8px 0 0;
-    width: 100%;
+    width: 40%;
     height: auto;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 figcaption {

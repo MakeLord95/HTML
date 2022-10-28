@@ -45,7 +45,8 @@ li a:hover {
 
 main {
     background-color: #9c9cac;
-    padding: 1rem;
+    padding-top: 5rem;
+    padding-bottom: 0;
     display: flex;
     flex-wrap: wrap;
 }
@@ -92,25 +93,13 @@ figure {
 main img {
     border-radius: 8px 8px 0 0;
     width: 80%;
-    height: 40%;
+    height: auto;
     margin-right: auto;
     margin-left: auto;
 }
 
 figcaption {
     padding: 1rem;
-}
-
-aside {
-    background-color: gainsboro;
-    width: 100%;
-}
-
-footer {
-    margin: 0;
-    background-color: teal;
-    padding: 1rem;
-    text-align: center;
 }
 
 form {
@@ -145,11 +134,7 @@ input {
     article {
         width: 50%;
     }
-/*
-    li {
-        width: 10rem;
-    }
-*/
+
     form {
         width: 40%;
     }

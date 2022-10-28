@@ -1,5 +1,6 @@
 .container {
     width: 100%;
+    height: auto;
     margin: auto;
 }
 
@@ -11,11 +12,6 @@ body {
     margin: 0;
 }
 
-header {
-    background-color: cadetblue;
-    padding: 1rem;
-}
-
 nav {
     background-color: burlywood;
 }
@@ -24,7 +20,7 @@ ul {
     display: flex;
     list-style-type: none;
     justify-content: space-evenly;
-    background-color: gold;
+    background-color: darkblue;
     padding: 0;
     margin: 0;
 }
@@ -54,6 +50,22 @@ main {
     flex-wrap: wrap;
 }
 
+main p {
+    padding: 0 8rem 7rem 8rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+body h1 {
+    text-align: center;
+    background-color: #9c9cac;
+    padding: 1rem;
+    margin: auto;
+}
+
+
 section {
     width: 100%;
     display: flex;
@@ -77,10 +89,10 @@ figure {
     border-radius: 8px;
 }
 
-img {
+main img {
     border-radius: 8px 8px 0 0;
-    width: 40%;
-    height: auto;
+    width: 80%;
+    height: 40%;
     margin-right: auto;
     margin-left: auto;
 }
@@ -95,6 +107,7 @@ aside {
 }
 
 footer {
+    margin: 0%;
     background-color: teal;
     padding: 1rem;
     text-align: center;
@@ -118,6 +131,7 @@ input {
 @media screen and (min-width: 769px){
     .container {
         width: 80%;
+        height: auto;
     }
 
     section {
@@ -131,11 +145,11 @@ input {
     article {
         width: 50%;
     }
-
+/*
     li {
         width: 10rem;
     }
-
+*/
     form {
         width: 40%;
     }

@@ -11,11 +11,6 @@ body {
     margin: 0;
 }
 
-header {
-    background-color: cadetblue;
-    padding: 1rem;
-}
-
 nav {
     background-color: burlywood;
 }
@@ -24,13 +19,18 @@ ul {
     display: flex;
     list-style-type: none;
     justify-content: space-evenly;
-    background-color: gold;
+    background-color: darkblue;
     padding: 0;
-    margin: 0;
+    margin: 0 0 0 150px;
 }
 
 li {
-    width: calc(100% / 3);
+    float: left;
+    width: calc(100% / 6);
+}
+
+.logo img {
+    position: absolute;
 }
 
 li a {

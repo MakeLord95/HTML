@@ -1,5 +1,5 @@
 .container {
-    width: 100%;
+    width: 80%;
     height: auto;
     margin: auto;
 }
@@ -12,21 +12,22 @@ body {
     margin: 0;
 }
 
-nav {
-    background-color: burlywood;
-}
-
 ul {
     display: flex;
     list-style-type: none;
     justify-content: space-evenly;
     background-color: darkblue;
     padding: 0;
-    margin: 0;
+    margin: 0 0 0 150px;
 }
 
 li {
-    width: calc(100% / 3);
+    float: left;
+    width: calc(100% / 6);
+}
+
+.logo img {
+    position: absolute;
 }
 
 li a {
@@ -51,7 +52,8 @@ main {
 }
 
 section {
-    width: 100%;
+    width: 80%;
+    margin: 8rem;
     display: flex;
     flex-wrap: wrap;
 }
@@ -61,14 +63,18 @@ section h2 {
 }
 
 article {
-    width: 100%;
-    padding: 1rem;
+    background-color: wheat;
+    width: 30%;
+    padding: 2rem;
     box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
 figure {
     float: left;
-    margin: 0 1rem 1rem 0;
+    margin: 1rem;
     border: 1px black solid;
     border-radius: 8px;
 }
@@ -79,15 +85,6 @@ main img {
     height: auto;
 }
 
-figcaption {
-    padding: 1rem;
-}
-
-aside {
-    background-color: gainsboro;
-    width: 100%;
-}
-
 footer {
     background-color: teal;
     padding: 1rem;
@@ -96,7 +93,7 @@ footer {
 
 form {
     background-color: floralwhite;
-    width: 80%;
+    width: 40%;
     margin: auto;
     padding: 2rem;
     display: flex;
@@ -107,27 +104,4 @@ input {
     display: block;
     width: 100%;
     padding: 1rem;
-}
-
-@media screen and (min-width: 769px){
-    .container {
-        width: 80%;
-        height: auto;
-    }
-
-    section {
-        width: 80%;
-    }
-
-    aside {
-        width: 20%;
-    }
-
-    article {
-        width: 50%;
-    }
-
-    form {
-        width: 40%;
-    }
 }

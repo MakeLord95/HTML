@@ -17,7 +17,7 @@ nav {
 ul {
     list-style-type: none;
     overflow: hidden;
-    background-color: darkblue;
+    background-color: #474E68;
     padding: 0;
     margin: 0;
 }
@@ -28,7 +28,7 @@ li {
 }
 
 li a {
-    background-color: darkblue;
+    background-color: #474E68;
     color: floralwhite;
     display: block;
     text-align: center;
@@ -37,33 +37,33 @@ li a {
 }
 
 .active {
-  background-color: #04AA6D;
+  background-color: #404258;
 }
 
 li a:hover:not(.active) {
-    background-color: #0000e6;
+    background-color: #50577A;
 }
 
 main {
-    background-color: #9c9cac;
+    background-color: #6B728E;
     padding-top: 20rem;
     padding-bottom: 38rem;
 }
 
 .contact {
     position: absolute;
-    margin-left: 6rem;
+    margin-left: 10rem;
 }
 
 main h3 {
-    margin-left: 10rem;
+    margin-left: auto;
     font-size: xx-large;
 }
 
 .info {
     line-height: 0;
     font-style: italic;
-    margin-left: 10rem;
+    margin-left: auto;
 }
 
 main iframe {

@@ -17,7 +17,7 @@ nav {
 ul {
     list-style-type: none;
     overflow: hidden;
-    background-color: darkblue;
+    background-color: #474E68;
     padding: 0;
     margin: 0;
 }
@@ -28,7 +28,7 @@ li {
 }
 
 li a {
-    background-color: darkblue;
+    background-color: #474E68;
     color: floralwhite;
     display: block;
     text-align: center;
@@ -37,16 +37,17 @@ li a {
 }
 
 .active {
-  background-color: #04AA6D;
+  background-color: #404258;
 }
 
 li a:hover:not(.active) {
-    background-color: #0000e6;
+    background-color: #50577A;
 }
 
 main {
-    background-color: #9c9cac;
+    background-color: #6B728E;
     padding-top: 12rem;
+    padding-bottom: 0.5rem;
 }
 
 main h1 {
@@ -56,6 +57,9 @@ main h1 {
 }
 
 main img {
+    width: 100%;
+    max-width: 1024px;
+    height: auto;
     border-radius: 8px;
     margin-right: auto;
     margin-left: auto;
@@ -64,7 +68,7 @@ main img {
 }
 
 main p {
-    padding: 1rem 30rem 5rem 30rem;
+    padding: 0 30rem 5rem 30rem;
     text-align: center;
     margin-left: auto;
     margin-right: auto;

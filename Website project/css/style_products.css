@@ -17,7 +17,7 @@ nav {
 ul {
     list-style-type: none;
     overflow: hidden;
-    background-color: darkblue;
+    background-color: #474E68;
     padding: 0;
     margin: 0;
 }
@@ -28,7 +28,7 @@ li {
 }
 
 li a {
-    background-color: darkblue;
+    background-color: #474E68;
     color: floralwhite;
     display: block;
     text-align: center;
@@ -37,15 +37,16 @@ li a {
 }
 
 .active {
-  background-color: #04AA6D;
+    background-color: #404258;
 }
 
 li a:hover:not(.active) {
-    background-color: #0000e6;
+    background-color: #50577A;
 }
 
 main {
-    background-color: #9c9cac;
+    background-color: #6B728E;
+    padding-bottom: 2.75rem;
 }
 
 section {
@@ -55,17 +56,26 @@ section {
 }
 
 .products {
-    margin: auto;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
-.products_p {
-    padding: 1rem 3rem 1rem 3rem;
-    margin-bottom: 8rem;
+.products h2 {
     text-align: left;
 }
 
-main img {
+.products figcaption {
+    max-width: 1024px;
+    margin-bottom: 8rem;
+}
+
+.products img {
+    max-width: 1024px;
     border-radius: 8px;
+    width: 100%;
+    height: auto;
 }
 
 article h3 {
@@ -75,7 +85,7 @@ article h3 {
 }
 
 article {
-    background-color: wheat;
+    background-color: #474E68;
     width: calc(100% / 5);
     padding: 1rem 1rem 0;
     margin: auto;
@@ -84,6 +94,7 @@ article {
     flex-wrap: wrap;
     text-align: center;
     border-radius: 8px;
+    color: wheat;
 }
 
 figure {
@@ -91,9 +102,16 @@ figure {
     border-radius: 8px;
 }
 
-figcaption {
-    position: absolute;
+figure img {
+    width: 100%;
+    height: auto;
+}
+
+article figcaption {
     font-style: italic;
     font-size: smaller;
-    color: gray;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    color: #c4c4c4;
 }

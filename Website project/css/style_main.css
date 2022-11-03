@@ -15,30 +15,32 @@ nav {
 }
 
 ul {
-    display: flex;
     list-style-type: none;
-    justify-content: space-evenly;
+    overflow: hidden;
     background-color: darkblue;
     padding: 0;
-    margin: 0 0 0 13.125rem;
+    margin: 0;
 }
 
 li {
-    float: left;
-    width: 100%;
+    float: right;
+    width: 10rem;
 }
 
 li a {
     background-color: darkblue;
     color: floralwhite;
-    width: 100%;
     display: block;
     text-align: center;
     line-height: 3rem;
     text-decoration: none;
 }
 
-li a:hover {
+.active {
+  background-color: #04AA6D;
+}
+
+li a:hover:not(.active) {
     background-color: #0000e6;
 }
 

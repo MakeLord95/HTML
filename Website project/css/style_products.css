@@ -1,9 +1,3 @@
-.container {
-    width: 80%;
-    height: auto;
-    margin: auto;
-}
-
 html {
     font-family: Verdana, sans-serif;
 }
@@ -12,96 +6,94 @@ body {
     margin: 0;
 }
 
+.logo img {
+    position: absolute;
+}
+
+nav {
+    background-color: yellow;
+}
+
 ul {
-    display: flex;
     list-style-type: none;
-    justify-content: space-evenly;
+    overflow: hidden;
     background-color: darkblue;
     padding: 0;
-    margin: 0 0 0 150px;
+    margin: 0;
 }
 
 li {
-    float: left;
-    width: calc(100% / 6);
-}
-
-.logo img {
-    position: absolute;
+    float: right;
+    width: 10rem;
 }
 
 li a {
     background-color: darkblue;
     color: floralwhite;
-    width: 100%;
     display: block;
     text-align: center;
     line-height: 3rem;
     text-decoration: none;
 }
 
-li a:hover {
+.active {
+  background-color: #04AA6D;
+}
+
+li a:hover:not(.active) {
     background-color: #0000e6;
 }
 
 main {
     background-color: #9c9cac;
-    padding: 1rem;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 section {
-    width: 80%;
-    margin: 8rem;
+    margin: 0 10rem 0;
     display: flex;
     flex-wrap: wrap;
 }
 
-section h2 {
-    width: 100%;
+.products {
+    margin: auto;
+}
+
+.products_p {
+    padding: 1rem 3rem 1rem 3rem;
+    margin-bottom: 8rem;
+    text-align: left;
+}
+
+main img {
+    border-radius: 8px;
+}
+
+article h3 {
+    padding: 0;
+    text-align: left;
+    margin: auto auto 1rem 1rem;
 }
 
 article {
     background-color: wheat;
-    width: 30%;
-    padding: 2rem;
+    width: calc(100% / 5);
+    padding: 1rem 1rem 0;
+    margin: auto;
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-}
-
-figure {
-    float: left;
-    margin: 1rem;
-    border: 1px black solid;
     border-radius: 8px;
 }
 
-main img {
-    border-radius: 8px 8px 0 0;
-    width: 100%;
-    height: auto;
-}
-
-footer {
-    background-color: teal;
-    padding: 1rem;
-    text-align: center;
-}
-
-form {
-    background-color: floralwhite;
-    width: 40%;
+figure {
     margin: auto;
-    padding: 2rem;
-    display: flex;
-    flex-wrap: wrap;
+    border-radius: 8px;
 }
 
-input {
-    display: block;
-    width: 100%;
-    padding: 1rem;
+figcaption {
+    position: absolute;
+    font-style: italic;
+    font-size: smaller;
+    color: gray;
 }

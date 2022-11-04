@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+
+  <title>SailAmanda</title>
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="description" content="School project">
+  <meta name="keywords" content="Sailing, Archipelago">
+  <meta name="author" content="Kim">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link rel="icon" type="image/x-icon" href="/favicon_io/favicon-32x32.png">
+</head>
+
+
+
+<body>
+
+  <header>
+
+    <div class="topnav" id="amandaTopnav">
+      <a class="active" href="index.html">Etusivu</a>
+      <a href="SYAmanda.html">S/Y Amanda</a>
+      <a href="Retket.html">Retket</a>
+      <a href="Saaristo.html">Saaristo</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <!-- Koodi otettu ja muokattu sopimaan sivuston väreihin https://www.w3schools.com/howto/howto_js_topnav_responsive.asp w3s -->
+    <script>
+      function myFunction() {
+        var x = document.getElementById("amandaTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </header>
+
+  <main>
+    <h1>Sail Amanda</h1>
+
+    <div class="flex_container">
+      <div class="flex_item">
+
+        <h3>Veneilyä Turun saaristossa</h3>
+        <p>Sail Amanda luo pintaraapaisun Benetaun 411 veneeseen, joka on kastettu S/y Amandaksi ja esittelee sen
+          toimintaympäristöä kesäisessä Turun saaristossa</p>
+        <img src="amandakuvat/amandaside2.jpg" alt="Purjevene" class="sidepicture">
+      </div>
+      <div class="flex_item">
+        <h3>Täkeimmät työkalut purjehtiessa</h3>
+        <ol>
+          <li>Pelastusliivit</li>
+          <li>Sään mukainen varustus</li>
+          <li>Hyvä asenne</li>
+        </ol>
+      </div>
+    </div>
+  </main>
+
+  <footer>SailAmanda <br>Kemiönsaari <br>Taalintehdas</footer>
+
+
+</body>
+
+
+</html>

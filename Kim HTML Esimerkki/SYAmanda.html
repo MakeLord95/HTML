@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+
+  <title>SailAmanda Ι S/Y Amanda</title>
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="description" content="School project">
+  <meta name="keywords" content="Sailing, Archipelago">
+  <meta name="author" content="Kim">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link rel="icon" type="image/x-icon" href="/favicon_io/favicon-32x32.png">
+</head>
+
+
+
+<body>
+
+  <header>
+
+
+    <div class="topnav" id="amandaTopnav">
+      <a href="index.html">Etusivu</a>
+      <a class="active" href="SYAmanda.html">S/Y Amanda</a>
+      <a href="Retket.html">Retket</a>
+      <a href="Saaristo.html">Saaristo</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <!-- Koodi topnaviin mallinnettu ja muokattu sopimaan sivuston väreihin https://www.w3schools.com/howto/howto_js_topnav_responsive.asp w3s -->
+    <script>
+      function myFunction() {
+        var x = document.getElementById("amandaTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </header>
+
+  <main>
+    <h1>S/Y Amanda</h1>
+
+    <div class="flex_container">
+      <div class="flex_item">
+        <p>S/Y, eli Sailing Yacht Amanda on ranskalaisen Benetaun valmistama Purjevene. <br>Kyseistä <a
+            title="Avautuu uudelle välilehdelle" class="one"
+            href="https://www.beneteau.com/en/oceanis-1995-2008/oceanis-clipper-411" target="_blank"
+            rel="noopener noreferrer external"> <b>Oceanis Clipper 411</b> </a>mallia valmistettiin vuodesta 1997 aina
+          vuoteen 2008.</p>
+        <img src="amandakuvat/syamanda1.jpg" alt="Purjevene" class="sidepicture">
+      </div>
+      <div class="flex_item">
+        <p>S/y Amanda on 4 kabiinilla varustettu malli, jolloin veneeseen mahtuu todella mukavasti miehistöä ja
+          nukkumatilaa riittää jopa 10 hengelle.</p>
+
+        <img src="amandakuvat/syamanda3.png" class="sidepicture">
+        <p>Kuvan lähde: Beneteau</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>SailAmanda <br>Kemiönsaari <br>Taalintehdas</footer>
+
+
+
+</body>
+
+
+</html>

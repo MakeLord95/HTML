@@ -1,9 +1,6 @@
-html {
-    font-family: Lato, sans-serif;
-}
-
 body {
     margin: 0;
+    font-family: Lato, sans-serif;
 }
 
 .logo img {
@@ -67,6 +64,7 @@ main h3 {
 }
 
 main iframe {
+    border-radius: 8px;
     margin-right: 12rem;
     float: right;
 }

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+
+  <title>SailAmanda Ι Saaristo</title>
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="description" content="School project">
+  <meta name="keywords" content="Sailing, Archipelago">
+  <meta name="author" content="Kim">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link rel="icon" type="image/x-icon" href="/favicon_io/favicon-32x32.png">
+</head>
+
+
+
+<body>
+
+  <header>
+
+
+
+    <div class="topnav" id="amandaTopnav">
+      <a href="index.html">Etusivu</a>
+      <a href="SYAmanda.html">S/Y Amanda</a>
+      <a href="Retket.html">Retket</a>
+      <a class="active" href="Saaristo.html">Saaristo</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <!-- Koodi otettu ja muokattu sopimaan sivuston väreihin https://www.w3schools.com/howto/howto_js_topnav_responsive.asp w3s -->
+    <script>
+      function myFunction() {
+        var x = document.getElementById("amandaTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </header>
+
+  <main>
+    <h1>Saaristo</h1>
+
+    <p>Turun saaristo tarjoaa kauniita maisemia ja <a title="Avautuu uudelle välilehdelle" class="one"
+        href="http://www.vierassatamat.fi/fi" target="_blank" rel="noopener noreferrer external">
+        <b>vierasvenesatamia</b> </a></p>
+
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="amandakuvat/saaristo1.jpg" alt="Kärinsund maisema" style="width:100%">
+        <div class="text">Kärinsund</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="amandakuvat/saaristo2.jpg" alt="Örö maisema" style="width:100%">
+        <div class="text">Örö</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="amandakuvat/saaristo3.jpg" alt="Brännskär maisema" style="width:100%">
+        <div class="text">brännskär</div>
+      </div>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+
+      <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) { slideIndex = 1 }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active";
+          setTimeout(showSlides, 3500);
+        }
+      </script>
+    </div>
+  </main>
+
+  <footer>SailAmanda <br>Kemiönsaari <br>Taalintehdas</footer>
+
+
+</body>
+
+
+</html>

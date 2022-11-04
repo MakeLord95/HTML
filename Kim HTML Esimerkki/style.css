@@ -1,0 +1,191 @@
+body {color: rgb(0, 0, 0);
+    background-color: whitesmoke; 
+    font-family: tahoma, arial, sans-serif;
+
+}
+p {
+    font-family:'Lato', sans-serif;
+    font-size: 18px;
+    
+}
+h1
+    {text-align: center;color:#1f487E; font-family: 'Lato', sans-serif;
+}
+h2,h3 {
+    color: #1f487E; font-family: 'lato', sans-serif;
+}
+main {
+    margin-top: 30px;
+}
+a.one:link {
+    color: #1f487E;
+    text-decoration: none;
+}
+a.one:visited{
+    color: #7bae7b
+}
+a.one:hover{
+    color: #1f487E;
+}
+
+.sidepicture {
+ width: 95%; 
+ display: block;
+ margin: auto;
+ border:5px; 
+ border-radius: 50px;
+ margin-bottom: 5px;
+}
+
+/*topnavin asetukset */
+.topnav {
+    background-color: #1f487E;
+    overflow:hidden
+    
+}
+.topnav a {
+    font-family: 'lato', sans-serif;
+    float: left;
+    display: block;
+    color: whitesmoke;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+.topnav a:hover {
+    background-color: #1f487E;
+    color: #7bae7b;
+
+}
+.topnav a.active {
+    background-color: whitesmoke;
+    color: #1f487E;
+    
+  }
+.topnav .icon {
+    display: none;
+  }
+/*topnav asetukset päättyy*/
+
+
+
+footer {
+    background-color: #1f487E;
+    color: #f2f2f2;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'lato', sans-serif;
+    margin-top: 15em;
+
+
+}
+
+
+/*Näihin ↓ tulevat selaimen koon mukaan eri layoutit*/
+@media only screen and (max-width:420px){
+    .topnav a:not(:first-child) 
+        {display: none;}
+        .topnav a.icon {
+        float: right;
+         display: block;
+        }
+    .topnav.responsive {position: relative}
+    .topnav.responsive a.icon 
+    {
+      position: absolute;
+      right: 0;
+      top: 0;}
+      .topnav.responsive a 
+      {float: none;
+        display: block;
+        text-align: left;}
+        .text {font-size: 11px}
+}
+
+
+
+@media only screen and (min-width:421px){
+    .flex_container{display:flex}
+
+     .flex_item {flex:1;
+           padding-right:5px;
+           padding-left:5px}
+}
+
+
+@media only screen and (min-width:1024px){
+    body {
+        width:65%;
+        margin-bottom: 5px;
+        margin:5px auto;
+        
+        border-radius: 5px;}
+        
+    :root {
+        background-image:url(amandakuvat/background2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover}
+    }
+
+
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active {
+    background-color: #717171;
+  }
+  
+
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }

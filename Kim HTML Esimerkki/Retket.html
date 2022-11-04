@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+
+  <title>SailAmanda Ι Retket</title>
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="description" content="School project">
+  <meta name="keywords" content="Sailing, Archipelago">
+  <meta name="author" content="Kim">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link rel="icon" type="image/x-icon" href="/favicon_io/favicon-32x32.png">
+</head>
+
+
+
+<body>
+
+  <header>
+
+
+
+    <div class="topnav" id="amandaTopnav">
+      <a href="index.html">Etusivu</a>
+      <a href="SYAmanda.html">S/Y Amanda</a>
+      <a class="active" href="Retket.html">Retket</a>
+      <a href="Saaristo.html">Saaristo</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <!-- Koodi katsottu ja muokattu sopimaan sivuston väreihin https://www.w3schools.com/howto/howto_js_topnav_responsive.asp w3s -->
+    <script>
+      function myFunction() {
+        var x = document.getElementById("amandaTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </header>
+
+  <main>
+    <h1>Retket</h1>
+
+    <div class="flex_container">
+      <div class="flex_item">
+
+
+        <p>Miehistön suosikiksi on muodostunut Turun saaristo, joka tarjoaa parhaat puitteet veneilyyn. Turun saariston
+          ulkopuolellekkin on myös lähdetty Ahvenanmaalle ja Tukholmaan.</p>
+        <img title="retki kuva" src="amandakuvat/retket1.jpg" alt="Venematka" class="sidepicture">
+      </div>
+      <div class="flex_item">
+        <p>
+
+          S/Y Amandan kotisatama on Taalintehtaalla Kemiönsaaressa, <a title="DB-Marinan kotisivu" class="one"
+            href="https://www.dbmarina.fi/" target="_blank" rel="noopener noreferrer external"><b>DB-Marinan</b></a>
+          satamassa.
+          Taalintehtaalta on hyvä lähteä seilaamaan Turun saariston monia eri saaria ja vierassatamia kohti.
+          Vierassatamat toimivat useissa saarissa yksityisten yrittäjien ylläpitäminä satamina, joihin veneilijät
+          pääsevät laituroimaan yöksi ja viettämään aikaa satamassa ja sen tarjoamissa palveluissa.
+        </p>
+
+        <H4>Hyödyllisiä työkaluja retkien suunnitteluun</H4>
+        <ul>
+          <li><a title="Avautuu uudelle välilehdelle" class="one" href="https://www.windy.com/?59.977,22.441,11"
+              target="_blank" rel="noopener noreferrer external"> <b>Windy.com</b> </a></li>
+        </ul>
+        <p>-Voit seurata tulevaa säätä puhelimelta ja tarkistaa tuulen suuntaa, sekä voimakkuuksia karttapohjalta</p>
+        <ul>
+          <li><a title="Avautuu uudelle välilehdelle" class="one" href="https://www.0100100.fi/0100100-merella/"
+              target="_blank" rel="noopener noreferrer external"> <b>0100100 Merellä</b> </a></li>
+        </ul>
+        <p>-Puhelinsovellus, joka tuo Suomen merikartat puhelimeesi</p>
+        <ul>
+          <li><a title="Avautuu uudelle välilehdelle" class="one" href="https://www.smartmarina.eu/" target="_blank"
+              rel="noopener noreferrer external"> <b>Smart Marina</b> </a></li>
+        </ul>
+        <p> -Palvelu, josta näet kartalta eri vierassatamoiden tietoja niiden palveluista ja saapumis ohjeita satamaan
+        </p>
+        <p><b>!HUOM!</b> Mobiili- ja verkkopalvelut ovat vain helpottamassa suunnittelua, lopulliset suunnitelmat,
+          reitit ja matkan seuranta tulisi tehdä perinteisillä karttakirjoilla, sekä veneen omilla navigointi laitteilla
+          sillä vesillä verkkoyhteydet ja mobiiliyhteydet eivät ole taattuja</p>
+
+
+      </div>
+    </div>
+  </main>
+
+  <footer>SailAmanda <br>Kemiönsaari <br>Taalintehdas</footer>
+
+
+</body>
+
+
+</html>
